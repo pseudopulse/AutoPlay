@@ -1,4 +1,4 @@
-namespace ModName.Utils {
+namespace AutoPlay.Utils {
     public static class AddressableUtils {
         public static T Load<T>(this string path) {
             return Addressables.LoadAssetAsync<T>(path).WaitForCompletion();
@@ -10,7 +10,7 @@ namespace ModName.Utils {
     }
 }
 
-namespace ModName.Utils.Paths {
+namespace AutoPlay.Utils.Paths {
   // this class was generated from the following code
   /*
 

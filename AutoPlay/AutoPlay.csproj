@@ -23,14 +23,12 @@
       <PackageReference Include="MMHOOK.RoR2" Version="2022.9.20">
         <NoWarn>NU1701</NoWarn>
       </PackageReference>
-      <PackageReference Include="R2API.ContentManagement" Version="1.0.1" />
-      <PackageReference Include="R2API.Core" Version="5.0.4" />
-      <PackageReference Include="R2API.Language" Version="1.0.0" />
-      <PackageReference Include="R2API.Prefab" Version="1.0.1" />
-      <PackageReference Include="R2API.RecalculateStats" Version="1.0.0" />
     </ItemGroup>
   
     <ItemGroup>
+      <Reference Include="System.Text.Json">
+        <HintPath>libs/System.Text.Json.dll</HintPath>
+      </Reference>
       <Reference Include="Facepunch.Steamworks">
         <HintPath>libs\Facepunch.Steamworks.dll</HintPath>
         <Private>false</Private>

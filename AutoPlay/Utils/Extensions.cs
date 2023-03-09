@@ -1,10 +1,7 @@
 using System;
 
-namespace ModName.Utils {
+namespace AutoPlay.Utils {
     public static class StringExtensions {
-        public static void Add(this string token, string text) {
-            LanguageAPI.Add(token, text);
-        }
 
         public static void RemoveComponent<T>(this GameObject gameObject) where T : Component {
             GameObject.Destroy(gameObject.GetComponent<T>());
@@ -28,6 +25,10 @@ namespace ModName.Utils {
 
         public static void AddComponent<T>(this Component self) where T : Component {
             self.gameObject.AddComponent<T>();
+        }
+
+        public static AISkillDriver FindDriverByName(this GameObject self, string name) {
+            return self.GetComponents<AISkillDriver>().FirstOrDefault(x => x.customName == name);
         }
     }
 }
